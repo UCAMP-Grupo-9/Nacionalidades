@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <p>Inserte argentinos, peruanos, venezolanos o mexicanos separados por comas</p>
+    <input type="text" id="input_text" value="" size="100" maxlength="250">
+    <form>
+        <table class="table1">
+            <tr>
+            <td><input type="button" value="submit" onclick="countNacionalities();"></td>
+            </tr>
+        </table>
+    </form>
+    <table class="table1">
+        <tr>
+            <td>Argentinos</td>
+            <td><input id="argentinos" type="text"></td>
+        </tr>
+        <tr>
+            <td>Mexicanos</td>
+            <td><input id="mexicanos" type="text"></td>
+        </tr>
+        <tr>
+            <td>Peruanos</td>
+            <td><input id="peruanos" type="text"></td>
+        </tr>
+        <tr>
+            <td>Venezolanos</td>
+            <td><input id="venezolanos" type="text"></td>
+        </tr>
+    </table>
+    <script src="./nacionalidades.js"></script>   
+</body>
+</html>
