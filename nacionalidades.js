@@ -3,7 +3,7 @@ let arr= ["mexicano","argentino","argentino","venezolano","peruano","mexicano","
 
 function countNacionalities(){
 
-    var arr = document.getElementById('input_text').value.split(', ');
+    var arr = document.getElementById('input_text').value.split(',');
 
     let mexicanos = 0;
     let peruanos = 0;
@@ -11,17 +11,17 @@ function countNacionalities(){
     let argentinos = 0;
 
     for(let i = 0; i <arr.length; i++) {
-      switch(arr[i]){
-        case 'argentino':
+      switch(true){
+        case arr[i].includes('argentino'):
             argentinos++;
             break;
-        case 'mexicano':
+        case arr[i].includes('mexicano'):
             mexicanos++;
             break;
-        case 'peruano':
+        case arr[i].includes('peruano'):
             peruanos++;
             break; 
-        case 'venezolano':
+        case arr[i].includes('venezolano'):
             venezolanos++;
             break;   
       }  
