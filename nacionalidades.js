@@ -1,9 +1,7 @@
-let arr= ["mexicano","argentino","argentino","venezolano","peruano","mexicano","argentino","peruano","venezolano"];
-
 
 function countNacionalities(){
 
-    var arr = document.getElementById('input_text').value.split(',');
+    let arr = document.getElementById('input_text').value.split(',');
 
     let mexicanos = 0;
     let peruanos = 0;
